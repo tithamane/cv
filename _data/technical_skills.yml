@@ -1,0 +1,78 @@
+- group: PHP
+  level: Efficient
+  experience: 5
+  last_used: 2016 (2014 as primary) 
+  type: language
+
+- group: Ruby
+  level: Good
+  experience: 2
+  last_used: 2016 (primary language from 2014)
+  type: language
+
+- group: ActionScript
+  level: Good
+  experience: 3
+  last_used: 2016
+
+- group: Java
+  level: Confident/Good
+  experience: 3
+  last_used: 2015
+  type: language
+
+- group: Nodejs
+  level: Good
+  experience: 2
+  last_used: 2015
+  type: language
+
+- group: Javascript
+  level: Good
+  experience: 4
+  last_used: 2016
+  type: language
+#
+# - group: HTML
+#   level: Good
+#   experience: 5
+#   last_used: 2016
+#
+# - group: CSS
+#   level: Good
+#   experience: 5
+#   last_used: 2016
+#
+# - group: Jade/Pug
+#   level: Good
+#   experience: 1
+#   last_used: 2016
+#
+# - group: Sass (SCSS)
+#   level: Good
+#   experience: 2
+#   last_used: 2016
+
+- group: Go
+  level: "Get's it done"
+  experience: 2
+  last_used: 2016
+  type: language
+
+- group: C#
+  level: "Get's it done"
+  experience: 1
+  last_used: 2016
+  type: language
+
+- group: C++
+  level: Confident
+  experience: 4
+  last_used: 2016
+  type: language
+
+- group: "Ruby on Rails"
+  level: Good
+  experience: 2
+  last_used: 2016
+  type: framework

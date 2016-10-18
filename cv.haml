@@ -7,22 +7,297 @@ title: CV of The Thabang Thamane
     CV of Thabang Thamane
 
   .CV__Section.CV__Summary
-    Summary
+    .CV__Section_Title
+      Summary
+    .CV__Section_Content
+      %p
+        After a mere 6 months working for two consulting agencies, I have seen enough of to rank myself above intermediate but still have a bit to learn to reach the South Africa senior level from the ones I've seen. The amount of time I spent problem solving on my own far exceeds the amount of time many intermediates worked and many seem to have the experience but are stuck trying to reach Level 1 while I'm working on reaching Level 2. 
+        %a.CV__External_Link{href: "http://sijinjoseph.com/programmer-competency-matrix/"}
+          (Different programmer levels)
+
+      %p
+        I am passionate about web development and have spent the last 6 years learning as much as I can. I like to watch conference videos posted by the likes of Google, AirBnB, Twitter, Facebook, LinkedIn and many software engineering companies. I also like to read their articles and the challenges they face and how they solve them. I am reading a few books on "Clean code" and how to be a leader in a team.
+
+      %p
+        I have set pretty high standards for myself and as a result I am years ahead of what a junior is and I would even rank myself ahead of most intermediates I've met who only better me by CSS. I'd prefer a post without such titles as there is no defined standards. There are too many junior level people called intermediates and seniors in my opinion and I find it frustrating to work under them.
+        
+      %p
+        I like solving backend problems using Ruby, PHP and Nodejs but don't really care too much about what I use. Being into ruby, it's only natural that I use Mac, Tmux, Vim and Linux for deployment. I know how to automate things using both Ruby and Nodejs and know my way around Gulp and Webpack. I am an introvert but that changes when talking about web development in general.
+
+      %p
+        Don't let my 6 months experience make you look down on me, I challenge you to have a conversation with me to see who is more passionate.
+
   .CV__Section.CV__Handles
-    Handles
+    .CV__Section_Title
+      Handles
   .CV__Section.CV__Personal_Details
-    Personal details
+    .CV__Section_Title
+      Personal details
+    .CV__Subtitle
+      .CV__Subtitle_Key
+        Names
+      .CV__Subtitle_Value
+        Thabang Irvin
+    .CV__Subtitle
+      .CV__Subtitle_Key
+        Surname
+      .CV__Subtitle_Value
+        Thamane
+    .CV__Subtitle
+      .CV__Subtitle_Key
+        Address
+      .CV__Subtitle_Value
+        .Address
+          .Address__Street
+            9 Richard Road
+          .Address__Suburb
+            Fourways
+          .Address__City
+            Johannesburg
+          .Address__Postal_Code
+            2191
+    .CV__Subtitle
+      .CV__Subtitle_Key
+        Gender
+      .CV__Subtitle_Value
+        Male
+    .CV__Subtitle
+      .CV__Subtitle_Key
+        Nationality
+      .CV__Subtitle_Value
+        South African
+    .CV__Subtitle
+      .CV__Subtitle_Key
+        Email
+      .CV__Subtitle_Value
+        [first name starting with a T].biz@gmail.com
+    .CV__Subtitle
+      .CV__Subtitle_Key
+        Work Language
+      .CV__Subtitle_Value
+        English
+    .CV__Subtitle
+      .CV__Subtitle_Key
+        Other Languages
+      .CV__Subtitle_Value
+        Sepedi, Ndebele, Afrikaans
+    .CV__Subtitle
+      .CV__Subtitle_Key
+        Driver's License
+      .CV__Subtitle_Value
+        Code 10
   .CV_Section.CV__Skills
-    Skills
+    .CV__Section_Title
+      Basic Education
+    .CV__Subtitle
+      .CV__Subtitle_Key
+        School
+      .CV__Subtitle_Value 
+        Hans Merensky High School
+      %ul.CV__School_Subject_List
+        %li.CV_School_Subject
+          English First Language
+        %li.CV_School_Subject
+          Afrikaans First Additional Language
+        %li.CV_School_Subject
+          Life Orientation
+        %li.CV_School_Subject
+          Mathematics
+        %li.CV_School_Subject
+          Physical Science
+        %li.CV_School_Subject
+          Engineering Graphics and Design
+        %li.CV_School_Subject
+          Civil Technology
+        %li.CV_School_Subject
+          Information Technology
+      .CV__Subtitle_Key
+        Year
+      .CV__Subtitle_Value
+        2010
+
+  .CV_Section.CV__Skills
+    .CV__Section_Title
+      Higher Education
+    .CV__Subtitle
+      .CV__Subtitle_Key
+        Institution
+      .CV__Subtitle_Value
+        University of Pretoria
+    .CV__Subtitle
+      .CV__Subtitle_Key
+        Course
+      .CV__Subtitle_Value
+        BIS Multimedia
+    .CV__Subtitle
+      .CV__Subtitle_Key
+        Year
+      .CV__Subtitle_Value
+        2011 - (2 courses left to complete)
+
+
+  .CV_Section.CV__Skills
+    .CV__Section_Title
+      Skills
+    %ul.CV__Skills_List
+      {% for skill in site.data.skills %}
+      %li.CV__Skill
+        {{ skill }}
+      {% endfor %}
+
   .CV__Section.CV__Strengths
-    Strengths
+    .CV__Section_Title
+      Strengths
+    %ul.CV__Strengths_List
+      {% for strength in site.data.strengths %}
+      %li.CV__Strength
+        {{ strength }}
+      {% endfor %}
+
   .CV__Section.CV__Weakness
-    Weakness
+    .CV__Section_Title
+      Weakness
+    %ul.CV__Weakness_List
+      {% for weakness in site.data.weaknesses %}
+      %li.CV__Weakness
+        {{ weakness }}
+      {% endfor %}
+
   .CV__Section.CV__Technical_Skills
-    Technical Skill
+    .CV__Section_Title
+      Technical Skill (Most Important)
+    %table.Technical_Skills
+      %th.Technical_Skills__Header
+        Skill / Group
+      %th.Technical_Skills__Header
+        Level
+      %th.Technical_Skills__Header
+        Personal Technical Experience
+      %th.Technical_Skills__Header
+        Last Used
+
+      {% for technical_skill in site.data.technical_skills %}
+      %tr.Technical_Skills__Skill
+        %td.Technical_Skills__Group
+          {{ technical_skill.group }}
+        %td.Technical_Skills__Level
+          {{ technical_skill.level }}
+        %td.Technical_Skills__Experience
+          {{ technical_skill.experience }}
+        %td.Technical_Skills__Last_Used
+          {{ technical_skill.last_used }}
+      {% endfor %}
+
   .CV__Section.CV__Work_Experience
-    Work Experience
-  .CV__Section.CV__Personal_Projects
-    Personal Projects
+    .CV__Section_Title
+      Work Experience
+    .Work
+      .Work__Place
+        .Work__Name
+          Gloo@Ogilvy
+        .Duration
+          .Duration__Start
+            .Duration__Month
+              March
+            .Duration__Year
+              2016
+          .Duration__End
+            .Duration__Month
+              June
+            .Duration__Year
+              2016
+        .Address
+          .Address__Physical
+            15 Sloane Street
+          .Address__Suburb
+            Bryanston
+          .Address__City
+            Johanneburg
+      .Work__Description
+        .Work__Role
+          Freelance Junior Developer
+        .Work__Duties
+          %ul
+            %li
+              Design changes to WordPress sites
+            %li
+              Using some of google's APIs like analytics and maps in sites
+            %li
+              Basics QA testing
+            %li
+              Working on responsive designs
+            %li
+              Deploying a lot of stuff I worked on
+            %li
+              Using Git as version control
+            %li
+              Doing my timesheets
+      .Work__Opinion
+        I feel I was under-utilized and didn't get the chance I would have liked. In short I am glad to have moved on and looking back
+        I doubt I would have learned much in the long run if I had continued to do the most basic things.
+
+    .Work
+      .Work__Place
+        .Work__Name
+          WinWin Consulting Internation
+        .Duration
+          .Duration__Start
+            .Duration__Month
+              July
+            .Duration__Year
+              2016
+          .Duration__End
+            .Duration__Present
+              Present
+        .Address
+          .Address__Complex
+            1<sup>st</sup> Floor, North Building, Riverside Junction
+          .Address__Physical
+            63 Saint James Crescent
+          .Address__Suburb
+            Bryanston
+          .Address__City
+            Johanneburg
+      .Work__Description
+        .Work__Role
+          Junior Developer
+        .Work__Duties
+          %ul
+            %li
+              Main guy in charge of writing all the backend APIs using Ruby and NodeJS
+            %li
+              Maintaining legacy PHP code
+            %li
+              Writing code for background jobs used for long tasks like importing files that need to be processed first
+            %li
+              Writing scripts that help speed up task that would take too much time when done manually
+            %li
+              Writing frontend coding using angularjs
+            %li
+              Responsible for solving the more complex problems (back and frontend)
+      .Work__Opinion
+        They trusted me and I showed them what I can do. As far as things go, I feel I shattered their gantt charts and increased productivity.
+        Being here allowed me to see that I am called a "junior" yet I am doing this that even intermediates struggle to get done. I got a chance to 
+        compare myself with other developers from different companies and I realised that I am way ahead of what my title makes me.
+
+  -# .CV__Section.CV__Personal_Projects
+  -#   .CV__Section_Title
+  -#     Personal Projects
   .CV__Section.CV__References
-    References
+    .CV__Section_Title
+      References
+    .CV__Reference
+      .Reference__Name
+        Chris Mallis
+      .Reference__Phone
+        072 144 4501
+      .Reference__Position
+        Senior Frontend Developer
+
+    .CV__Reference
+      .Reference__Name
+        Nosi Ncala
+      .Reference__Phone
+        073 633 8196
+      .Reference__Position
+        Junior Developer
