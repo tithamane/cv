@@ -1,6 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    breakpoint (2.7.0)
+      sass (~> 3.3)
+      sassy-maps (< 1.0.0)
     colorator (1.1.0)
     ffi (1.9.14)
     forwardable-extended (2.6.0)
@@ -38,18 +41,24 @@ GEM
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
+    sassy-maps (0.4.0)
+      sass (~> 3.3)
+    susy (2.2.12)
+      sass (>= 3.3.0, < 3.5)
     tilt (2.0.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  breakpoint
   jekyll (= 3.2.1)
   jekyll-haml
   minima
+  susy
 
 RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.13.1
+   1.13.5
