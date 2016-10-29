@@ -3,9 +3,24 @@
 
   // border: 1px $md-secondary-color solid;
   float: left;
-  padding: 1rem;
+  padding: 0 1rem;
   max-height: 100%;
   overflow-y: auto;
   width: 25%;
+
+  &__title {
+    font: {
+      size: 1.5rem;
+    }
+    line-height: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  &__underline {
+    background-color: $md-primary-color;
+    height: 3px;
+    width: 100%;
+  }
 
 }
