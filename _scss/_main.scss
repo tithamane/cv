@@ -1,0 +1,22 @@
+@import 'colors';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-weight: 13px;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+@import 'column';
