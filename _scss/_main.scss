@@ -7,7 +7,10 @@
 
 html,
 body {
-  font-weight: 13px;
+  font: {
+    // family: arial,sans-serif-light,sans-serif;
+    size: 16px;
+  }
   height: 100%;
 }
 
@@ -21,6 +24,7 @@ body {
 }
 
 @import 'cv';
+@import 'list';
 @import 'column';
 @import 'section';
 @import 'image';
