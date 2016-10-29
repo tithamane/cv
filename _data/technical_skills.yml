@@ -10,21 +10,10 @@
   last_used: 2016 (primary language from 2014)
   type: language
 
-- group: ActionScript
-  level: Good
-  experience: 3
-  last_used: 2016
-
-- group: Java
-  level: Confident/Good
-  experience: 3
-  last_used: 2015
-  type: language
-
 - group: Nodejs
   level: Good
   experience: 2
-  last_used: 2015
+  last_used: 2016
   type: language
 
 - group: Javascript
@@ -32,6 +21,17 @@
   experience: 4
   last_used: 2016
   type: language
+
+- group: Java
+  level: Confident/Good
+  experience: 3
+  last_used: 2015
+  type: language
+
+- group: ActionScript
+  level: Good
+  experience: 3
+  last_used: 2016
 #
 # - group: HTML
 #   level: Good
