@@ -5,12 +5,15 @@ title: CV of The Thabang Thamane
 .cv
   .column
     .section.section--flat
-      .cv__imageHolder
-        %img.cv__image.image.image--centered.image--round{src: "/images/Thabang-Thamane.JPG", alt: "Picture of Thabang Thamane"}
+      .section-content
+        .cv__imageHolder
+          %img.cv__image.image.image--centered.image--round{src: "/images/Thabang-Thamane.JPG", alt: "Picture of Thabang Thamane"}
 
-    .section.handle
+    .section.section--flat.handle
       .section__title
         Handles
+      .section__content
+        twitter
 
     .section.summary
       .section__title
@@ -48,116 +51,120 @@ title: CV of The Thabang Thamane
     .column__title
       About
     .column__underline
-    .section.interests
-      {% for interest in site.data.interests %}
-      .interests__interest
-        {{ interest }}
-      {% endfor %}
+    .section.section--flat.interests
+      .section__content
+        {% for interest in site.data.interests %}
+        .interests__interest
+          {{ interest }}
+        {% endfor %}
 
     .section.personal
       .section__title
         Personal details
-      .cv__subtitle
-        .cv__subtitle_key
-          Names
-        .cv__subtitle_value
-          Thabang Irvin
-      .cv__subtitle
-        .cv__subtitle_key
-          Surname
-        .cv__subtitle_value
-          Thamane
-      .cv__subtitle
-        .CV__Subtitle_Key
-          Address
-        .cv__subtitle_value
-          .address
-            .address__street
-              9 Richard Road
-            .address__suburb
-              Fourways
-            .address__city
-              Johannesburg
-            .address__postal_code
-              2191
-      .cv__subtitle
-        .cv__subtitle_key
-          Gender
-        .cv__subtitle_value
-          Male
-      .cv__subtitle
-        .cv__subtitle_key
-          Nationality
-        .cv__subtitle_value
-          South African
-      .cv__subtitle
-        .cv__subtitle_key
-          Email
-        .cv__subtitle_value
-          [first name starting with a T].biz@gmail.com
-      .cv__subtitle
-        .cv__subtitle_key
-          Work Language
-        .cv__subtitle_value
-          English
-      .cv__subtitle
-        .cv__subtitle_key
-          Other Languages
-        .cv__subtitle_value
-          Sepedi, Ndebele, Afrikaans
-      .cv__subtitle
-        .cv__subtitle_key
-          Driver's License
-        .cv__subtitle_value
-          Code 10
+      .section__content
+        .cv__subtitle
+          .cv__subtitle_key
+            Names
+          .cv__subtitle_value
+            Thabang Irvin
+        .cv__subtitle
+          .cv__subtitle_key
+            Surname
+          .cv__subtitle_value
+            Thamane
+        .cv__subtitle
+          .CV__Subtitle_Key
+            Address
+          .cv__subtitle_value
+            .address
+              .address__street
+                9 Richard Road
+              .address__suburb
+                Fourways
+              .address__city
+                Johannesburg
+              .address__postal_code
+                2191
+        .cv__subtitle
+          .cv__subtitle_key
+            Gender
+          .cv__subtitle_value
+            Male
+        .cv__subtitle
+          .cv__subtitle_key
+            Nationality
+          .cv__subtitle_value
+            South African
+        .cv__subtitle
+          .cv__subtitle_key
+            Email
+          .cv__subtitle_value
+            [first name starting with a T].biz@gmail.com
+        .cv__subtitle
+          .cv__subtitle_key
+            Work Language
+          .cv__subtitle_value
+            English
+        .cv__subtitle
+          .cv__subtitle_key
+            Other Languages
+          .cv__subtitle_value
+            Sepedi, Ndebele, Afrikaans
+        .cv__subtitle
+          .cv__subtitle_key
+            Driver's License
+          .cv__subtitle_value
+            Code 10
     .section.education
       .section__title
         Basic Education
-      .cv__subtitle
-        .cv__subtitle_key
-          School
-        .cv__subtitle_value 
-          Hans Merensky High School
-        %ul.cv__school_subject_list
-          %li.cv_school_subject
-            English First Language
-          %li.cv_school_subject
-            Afrikaans First Additional Language
-          %li.cv_school_subject
-            Life Orientation
-          %li.cv_school_subject
-            Mathematics
-          %li.cv_school_subject
-            Physical Science
-          %li.cv_school_subject
-            Engineering Graphics and Design
-          %li.cv_school_subject
-            Civil Technology
-          %li.cv_school_subject
-            Information Technology
-        .cv__subtitle_key
-          Year
-        .cv__subtitle_value
-          2010
+      .section__content
+        .cv__subtitle
+          .cv__subtitle_key
+            School
+          .cv__subtitle_value 
+            Hans Merensky High School
+          %ul.cv__school_subject_list
+            %li.cv_school_subject
+              English First Language
+            %li.cv_school_subject
+              Afrikaans First Additional Language
+            %li.cv_school_subject
+              Life Orientation
+            %li.cv_school_subject
+              Mathematics
+            %li.cv_school_subject
+              Physical Science
+            %li.cv_school_subject
+              Engineering Graphics and Design
+            %li.cv_school_subject
+              Civil Technology
+            %li.cv_school_subject
+              Information Technology
+          .cv__subtitle_key
+            Year
+          .cv__subtitle_value
+            2010
 
     .section.varsity
       .section__title
         Higher Education
-      .cv__subtitle
-        .cv__subtitle_key
-          Institution
-        .cv__subtitle_value
-          University of Pretoria
-      .cv__subtitle
-        .cv__subtitle_key
-          Course
-        .cv__subtitle_value
-          BIS Multimedia
-      .cv__subtitle
-        .cv__subtitle_key
-          Year
-        .cv__subtitle_value
-          2011 - (2 courses left to complete)
+      .section__content
+        .cv__subtitle
+          .cv__subtitle_key
+            Institution
+          .cv__subtitle_value
+            University of Pretoria
+        .cv__subtitle
+          .cv__subtitle_key
+            Course
+          .cv__subtitle_value
+            BIS Multimedia
+        .cv__subtitle
+          .cv__subtitle_key
+            Year
+          .cv__subtitle_value
+            2011 - (2 courses left to complete)
 
 
   .column
@@ -167,54 +174,58 @@ title: CV of The Thabang Thamane
     .section.skills
       .section__title
         Skills
-      %ul.skill__list
-        {% for skill in site.data.skills %}
-        %li.skill
-          {{ skill }}
-        {% endfor %}
+      .section__content
+        %ul.skill__list
+          {% for skill in site.data.skills %}
+          %li.skill
+            {{ skill }}
+          {% endfor %}
 
     .section.strength
       .section__title
         Strengths
-      %ul.strength__list
-        {% for strength in site.data.strengths %}
-        %li.strength
-          {{ strength }}
-        {% endfor %}
+      .section__content
+        %ul.strength__list
+          {% for strength in site.data.strengths %}
+          %li.strength
+            {{ strength }}
+          {% endfor %}
 
     .section.weakness
       .section__title
         Weakness
-      %ul.weakness_list
-        {% for weakness in site.data.weaknesses %}
-        %li.weakness
-          {{ weakness }}
-        {% endfor %}
+      .section__content
+        %ul.weakness_list
+          {% for weakness in site.data.weaknesses %}
+          %li.weakness
+            {{ weakness }}
+          {% endfor %}
 
     .section.technical_skills
       .section__title
         Technical Skill (Most Important)
-      %table.technical_skills
-        %th.technical_skills__header
-          Skill / Group
-        %th.technical_skills__header
-          Level
-        %th.technical_skills__header
-          Personal Technical Experience
-        %th.technical_skills__header
-          Last Used
+      .section__content
+        %table.technical_skills
+          %th.technical_skills__header
+            Skill / Group
+          %th.technical_skills__header
+            Level
+          %th.technical_skills__header
+            Personal Technical Experience
+          %th.technical_skills__header
+            Last Used
 
-        {% for technical_skill in site.data.technical_skills %}
-        %tr.technical_skills__skill
-          %td.technical_skills__group
-            {{ technical_skill.group }}
-          %td.technical_skills__level
-            {{ technical_skill.level }}
-          %td.technical_skills__experience
-            {{ technical_skill.experience }}
-          %td.technical_skills__last_used
-            {{ technical_skill.last_used }}
-        {% endfor %}
+          {% for technical_skill in site.data.technical_skills %}
+          %tr.technical_skills__skill
+            %td.technical_skills__group
+              {{ technical_skill.group }}
+            %td.technical_skills__level
+              {{ technical_skill.level }}
+            %td.technical_skills__experience
+              {{ technical_skill.experience }}
+            %td.technical_skills__last_used
+              {{ technical_skill.last_used }}
+          {% endfor %}
 
   .column
     .column__title
@@ -223,99 +234,100 @@ title: CV of The Thabang Thamane
     .section.work__experience
       .section__title
         Work Experience
-      .work
-        .work__place
-          .work__name
-            Gloo@Ogilvy
-          .duration
-            .duration__start
-              .duration__month
-                March
-              .duration__year
-                2016
-            .duration__end
-              .duration__month
-                June
-              .duration__year
-                2016
-          .address
-            .address__physical
-              15 Sloane Street
-            .address__suburb
-              Bryanston
-            .address__city
-              Johanneburg
-        .work__description
-          .work__role
-            Freelance Junior Developer
-          .work__duties
-            %ul
-              %li
-                Design changes to WordPress sites
-              %li
-                Using some of google's APIs like analytics and maps in sites
-              %li
-                Basics QA testing
-              %li
-                Working on responsive designs
-              %li
-                Deploying a lot of stuff I worked on
-              %li
-                Using Git as version control
-              %li
-                Doing my timesheets
-        .work__opinion
-          I feel I was under-utilized and didn't get the chance I would have liked. In short I am glad to have moved on and looking back
-          I doubt I would have learned much in the long run if I had continued to do the most basic things.
+      .section__content
+        .work
+          .work__place
+            .work__name
+              Gloo@Ogilvy
+            .duration
+              .duration__start
+                .duration__month
+                  March
+                .duration__year
+                  2016
+              .duration__end
+                .duration__month
+                  June
+                .duration__year
+                  2016
+            .address
+              .address__physical
+                15 Sloane Street
+              .address__suburb
+                Bryanston
+              .address__city
+                Johanneburg
+          .work__description
+            .work__role
+              Freelance Junior Developer
+            .work__duties
+              %ul
+                %li
+                  Design changes to WordPress sites
+                %li
+                  Using some of google's APIs like analytics and maps in sites
+                %li
+                  Basics QA testing
+                %li
+                  Working on responsive designs
+                %li
+                  Deploying a lot of stuff I worked on
+                %li
+                  Using Git as version control
+                %li
+                  Doing my timesheets
+          .work__opinion
+            I feel I was under-utilized and didn't get the chance I would have liked. In short I am glad to have moved on and looking back
+            I doubt I would have learned much in the long run if I had continued to do the most basic things.
 
-      .work
-        .work__place
-          .work__name
-            WinWin Consulting Internation
-          .duration
-            .duration__start
-              .duration__month
-                July
-              .duration__year
-                2016
-            .duration__end
-              .duration__present
-                Present
-          .address
-            .address__complex
-              1<sup>st</sup> Floor, North Building, Riverside Junction
-            .address__physical
-              63 Saint James Crescent
-            .address__suburb
-              Bryanston
-            .address__city
-              Johanneburg
-        .work__description
-          .work__role
-            Junior Developer
-          .work__duties
-            %ul
-              %li
-                Main guy in charge of writing all the backend APIs using Ruby and NodeJS
-              %li
-                Maintaining legacy PHP code
-              %li
-                Writing code for background jobs used for long tasks like importing files that need to be processed first
-              %li
-                Writing scripts that help speed up task that would take too much time when done manually
-              %li
-                Writing frontend coding using angularjs
-              %li
-                Responsible for solving the more complex problems (back and frontend)
-        -# .work__opinion
-        -#   They trusted me and I showed them what I can do. As far as things go, I feel I shattered their gantt charts and increased productivity.
-        -#   Being here allowed me to see that I am called a "junior" yet I am doing this that even intermediates struggle to get done. I got a chance to 
-        -#   compare myself with other developers from different companies and I realised that I am way ahead of what my title makes me.
-        .work__opinion
-          It is still a work in progress but I have been trusted enough to write code for things that are out of the scope of a junior.
-          I make this assumption based on junior developer tests I've seen which basically test if the person knows the difference 
-          between a server and the client. I've always known I can build an entire system on my own but I just had to do it in the industry
-          which I did.
+        .work
+          .work__place
+            .work__name
+              WinWin Consulting Internation
+            .duration
+              .duration__start
+                .duration__month
+                  July
+                .duration__year
+                  2016
+              .duration__end
+                .duration__present
+                  Present
+            .address
+              .address__complex
+                1<sup>st</sup> Floor, North Building, Riverside Junction
+              .address__physical
+                63 Saint James Crescent
+              .address__suburb
+                Bryanston
+              .address__city
+                Johanneburg
+          .work__description
+            .work__role
+              Junior Developer
+            .work__duties
+              %ul
+                %li
+                  Main guy in charge of writing all the backend APIs using Ruby and NodeJS
+                %li
+                  Maintaining legacy PHP code
+                %li
+                  Writing code for background jobs used for long tasks like importing files that need to be processed first
+                %li
+                  Writing scripts that help speed up task that would take too much time when done manually
+                %li
+                  Writing frontend coding using angularjs
+                %li
+                  Responsible for solving the more complex problems (back and frontend)
+          -# .work__opinion
+          -#   They trusted me and I showed them what I can do. As far as things go, I feel I shattered their gantt charts and increased productivity.
+          -#   Being here allowed me to see that I am called a "junior" yet I am doing this that even intermediates struggle to get done. I got a chance to 
+          -#   compare myself with other developers from different companies and I realised that I am way ahead of what my title makes me.
+          .work__opinion
+            It is still a work in progress but I have been trusted enough to write code for things that are out of the scope of a junior.
+            I make this assumption based on junior developer tests I've seen which basically test if the person knows the difference 
+            between a server and the client. I've always known I can build an entire system on my own but I just had to do it in the industry
+            which I did.
 
     -# .CV__Section.CV__Personal_Projects
     -#   .CV__Section_Title
@@ -323,15 +335,16 @@ title: CV of The Thabang Thamane
     .section.references
       .section__title
         References
-      .reference
-        .reference__name
-          Chris Mallis
-        .reference__position
-          Senior Frontend Developer
+      .section__content
+        .reference
+          .reference__name
+            Chris Mallis
+          .reference__position
+            Senior Frontend Developer
 
-      .reference
-        .reference__name
-          Nosi Ncala
-        .reference__position
-          Junior Developer
+        .reference
+          .reference__name
+            Nosi Ncala
+          .reference__position
+            Junior Developer
   .clear-fix

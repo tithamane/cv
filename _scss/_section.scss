@@ -1,10 +1,25 @@
 .section {
-  border: solid 1px red;
+  border: solid 2px $md-primary-color;
 
-  margin: 1rem 0;
+  margin: .5rem 0;
   // padding: 0.5rem;
 
   &--flat {
     border: 0;
+  }
+
+  &__title {
+    background-color: $md-primary-color;
+    color: $white-color;
+    font: {
+      size: $section-title-font-size;
+    }
+    height: $section-title-height;
+    line-height: $section-title-height;
+    text-align: center;
+  }
+
+  &__content {
+    margin: $section-content-margin;
   }
 }
