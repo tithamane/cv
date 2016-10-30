@@ -1,7 +1,7 @@
 ---
 layout: cv
 title: CV of The Thabang Thamane
----
+--- 
 .cv
   .column
     .section.section--flat
@@ -20,12 +20,12 @@ title: CV of The Thabang Thamane
         Summary
       .section__content
         %p.summary__paragraph
-          I've been working for 6 months but I actually bring 6 years worth of web knowledge to bring to the table which is something I have to take into consideration on my next offer. 
-        
+          I've been working for 6 months but I actually bring 6 years worth of web knowledge to the table which is something I have to take into consideration on my next offer. 
+          I add just as much if not more value than developers that
+          have been in the industry for that long. I say this based on the solutions I have seen most of them come up with. 
+
         %p.summary__paragraph
-          I add just as much if not more value than people
-          have been in the industry for that long. I say this based on the solutions I have seen most developers come up with. The systems I try to
-          build in my spare time for for my future company are meant to be 
+          The systems I try to build in my spare time for for my future company are meant to be
           %ul.summary__list
             %li.summary__list_item
               cost effective
@@ -37,6 +37,8 @@ title: CV of The Thabang Thamane
               scalable if ever needed
             %li.summary__list_item
               efficient enought to boost user experience
+
+        %p.summary__paragraph
           I would also like to see myself reach the highest levels a within the next five to ten years and would be happy to discuss the levels I have reached so far.
           %a.cv__external_link{href: "http://sijinjoseph.com/programmer-competency-matrix/", target: "_blank"}
             (Different programmer levels)
@@ -67,13 +69,15 @@ title: CV of The Thabang Thamane
             Names
           .cv__subtitle_value
             Thabang Irvin
+          .clear-fix
         .cv__subtitle
           .cv__subtitle_key
             Surname
           .cv__subtitle_value
             Thamane
+          .clear-fix
         .cv__subtitle
-          .CV__Subtitle_Key
+          .cv__subtitle_key
             Address
           .cv__subtitle_value
             .address
@@ -85,36 +89,47 @@ title: CV of The Thabang Thamane
                 Johannesburg
               .address__postal_code
                 2191
+          .clear-fix
         .cv__subtitle
           .cv__subtitle_key
             Gender
           .cv__subtitle_value
             Male
+          .clear-fix
         .cv__subtitle
           .cv__subtitle_key
             Nationality
           .cv__subtitle_value
             South African
+          .clear-fix
         .cv__subtitle
           .cv__subtitle_key
             Email
           .cv__subtitle_value
-            [first name starting with a T].biz@gmail.com
+            .cv__contact
+              %span.cv__email
+              %span
+                \.biz@gmail.com
+          .clear-fix
         .cv__subtitle
           .cv__subtitle_key
             Work Language
           .cv__subtitle_value
             English
+          .clear-fix
         .cv__subtitle
           .cv__subtitle_key
             Other Languages
           .cv__subtitle_value
             Sepedi, Ndebele, Afrikaans
+          .clear-fix
         .cv__subtitle
           .cv__subtitle_key
-            Driver's License
+            License
           .cv__subtitle_value
             Code 10
+          .clear-fix
+        .clear-fix
     .section.education
       .section__title
         Basic Education
@@ -124,6 +139,7 @@ title: CV of The Thabang Thamane
             School
           .cv__subtitle_value 
             Hans Merensky High School
+          .clear-fix
           %ul.cv__school_subject_list
             %li.cv_school_subject
               English First Language
@@ -145,6 +161,8 @@ title: CV of The Thabang Thamane
             Year
           .cv__subtitle_value
             2010
+          .clear-fix
+        .clear-fix
 
     .section.varsity
       .section__title
@@ -155,17 +173,19 @@ title: CV of The Thabang Thamane
             Institution
           .cv__subtitle_value
             University of Pretoria
+          .clear-fix
         .cv__subtitle
           .cv__subtitle_key
             Course
           .cv__subtitle_value
             BIS Multimedia
+          .clear-fix
         .cv__subtitle
           .cv__subtitle_key
             Year
           .cv__subtitle_value
             2011 - (2 courses left to complete)
-
+          .clear-fix
 
   .column
     .column__title
@@ -204,28 +224,27 @@ title: CV of The Thabang Thamane
     .section.technical_skills
       .section__title
         Technical Skill (Most Important)
-      .section__content
-        %table.technical_skills
-          %th.technical_skills__header
-            Skill / Group
-          %th.technical_skills__header
-            Level
-          %th.technical_skills__header
-            Personal Technical Experience
-          %th.technical_skills__header
-            Last Used
+      %table.technical_skills__table
+        %th.technical_skills__header
+          Skill
+        %th.technical_skills__header
+          Level
+        %th.technical_skills__header{title: "Personal Technical Experience (How long I've been using this skill)"}
+          PTE
+        %th.technical_skills__header
+          Last Used
 
-          {% for technical_skill in site.data.technical_skills %}
-          %tr.technical_skills__skill
-            %td.technical_skills__group
-              {{ technical_skill.group }}
-            %td.technical_skills__level
-              {{ technical_skill.level }}
-            %td.technical_skills__experience
-              {{ technical_skill.experience }}
-            %td.technical_skills__last_used
-              {{ technical_skill.last_used }}
-          {% endfor %}
+        {% for technical_skill in site.data.technical_skills %}
+        %tr.technical_skills__skill
+          %td.technical_skills__group
+            {{ technical_skill.group }}
+          %td.technical_skills__level
+            {{ technical_skill.level }}
+          %td.technical_skills__experience
+            {{ technical_skill.experience }}
+          %td.technical_skills__last_used
+            {{ technical_skill.last_used }}
+        {% endfor %}
 
   .column
     .column__title
@@ -234,7 +253,7 @@ title: CV of The Thabang Thamane
     .section.work__experience
       .section__title
         Work Experience
-      .section__content
+      .section__content.section__content--no-margin
         .work
           .work__place
             .work__name
@@ -245,18 +264,24 @@ title: CV of The Thabang Thamane
                   March
                 .duration__year
                   2016
+                .clear-fix
+              .duration__to
+                &#x2192;
               .duration__end
                 .duration__month
                   June
                 .duration__year
                   2016
-            .address
-              .address__physical
-                15 Sloane Street
-              .address__suburb
-                Bryanston
-              .address__city
-                Johanneburg
+                .clear-fix
+              .clear-fix
+            .work__address
+              .address
+                .address__physical
+                  15 Sloane Street
+                .address__suburb
+                  Bryanston
+                .address__city
+                  Johanneburg
           .work__description
             .work__role
               Freelance Junior Developer
@@ -280,7 +305,7 @@ title: CV of The Thabang Thamane
             I feel I was under-utilized and didn't get the chance I would have liked. In short I am glad to have moved on and looking back
             I doubt I would have learned much in the long run if I had continued to do the most basic things.
 
-        .work
+        .work.work--top-border
           .work__place
             .work__name
               WinWin Consulting Internation
@@ -290,18 +315,24 @@ title: CV of The Thabang Thamane
                   July
                 .duration__year
                   2016
+                .clear-fix
+              .duration__to
+                &#x2192;
               .duration__end
                 .duration__present
                   Present
-            .address
-              .address__complex
-                1<sup>st</sup> Floor, North Building, Riverside Junction
-              .address__physical
-                63 Saint James Crescent
-              .address__suburb
-                Bryanston
-              .address__city
-                Johanneburg
+                .clear-fix
+              .clear-fix
+            .work__address
+              .address
+                .address__complex
+                  1<sup>st</sup> Floor, North Building
+                .address__physical
+                  63 Saint James Crescent
+                .address__suburb
+                  Bryanston
+                .address__city
+                  Johanneburg
           .work__description
             .work__role
               Junior Developer

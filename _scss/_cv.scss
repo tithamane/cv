@@ -1,7 +1,30 @@
 .cv {
+  &__email:after {
+    content: "thabang";
+  }
+
+  &__contact {
+    min-width: 100%;
+  }
+
   &__image {
     display: block;
     height: auto;
     width: 75%;
+  }
+
+  &__subtitle {
+    margin: .35rem 0;
+  }
+
+  &__subtitle_key {
+    float: left;
+    font-weight: 600;
+    width: 35%;
+  }
+
+  &__subtitle_value {
+    float: left;
+    width: 65%;
   }
 }

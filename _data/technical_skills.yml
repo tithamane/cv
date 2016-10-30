@@ -1,13 +1,15 @@
 - group: PHP
   level: Efficient
   experience: 5
-  last_used: 2016 (2014 as primary) 
+  last_used: 2016
+  title: (2014 as primary) 
   type: language
 
 - group: Ruby
   level: Good
   experience: 2
-  last_used: 2016 (primary language from 2014)
+  last_used: 2016
+  title: (primary language from 2014)
   type: language
 
 - group: Nodejs
@@ -23,7 +25,7 @@
   type: language
 
 - group: Java
-  level: Confident/Good
+  level: Good
   experience: 3
   last_used: 2015
   type: language
@@ -54,13 +56,13 @@
 #   last_used: 2016
 
 - group: Go
-  level: "Get's it done"
+  level: Confident
   experience: 2
   last_used: 2016
   type: language
 
 - group: C#
-  level: "Get's it done"
+  level: Confident
   experience: 1
   last_used: 2016
   type: language
@@ -68,7 +70,7 @@
 - group: C++
   level: Confident
   experience: 4
-  last_used: 2016
+  last_used: 2014
   type: language
 
 - group: "Ruby on Rails"

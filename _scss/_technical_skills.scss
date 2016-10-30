@@ -1,0 +1,20 @@
+.technical_skills {
+  &__table {
+    
+    font-size: .9rem;
+    text-align: center;
+    width: 100%;
+    word-wrap: break-word;
+  }
+
+  table,
+  th,
+  td {
+    border: solid 1px $md-primary-color;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: .25rem 0;
+  }
+}

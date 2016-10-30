@@ -1,0 +1,19 @@
+.address {
+  display: inline-block;
+  // font-size: .9rem;
+  padding: .25rem;
+
+  &__physical, &__suburb, &__city {
+    text-align: left;
+  }
+
+  &__physical {
+
+  }
+
+  &__suburb {
+  }
+
+  &__city {
+  }
+}

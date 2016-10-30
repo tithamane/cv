@@ -30,3 +30,6 @@ markdown: kramdown
 
 sass:
   sass_dir: _scss
+gems:
+  - susy
+  - breakpoint

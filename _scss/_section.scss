@@ -2,6 +2,8 @@
   border: solid 2px $md-primary-color;
 
   margin: .5rem 0;
+  overflow-x: auto;
+  position: relative;
   // padding: 0.5rem;
 
   &--flat {
@@ -17,9 +19,14 @@
     height: $section-title-height;
     line-height: $section-title-height;
     text-align: center;
+    width: 100%;
   }
 
   &__content {
     margin: $section-content-margin;
+
+    &--no-margin {
+      margin: 0;
+    }
   }
 }

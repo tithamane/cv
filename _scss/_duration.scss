@@ -1,0 +1,31 @@
+.duration {
+
+  margin: .2rem 0;
+
+  &__start, &__end {
+    float: left;
+    width: 40%;
+  }
+   &__to {
+     float: left;
+     width: 20%;
+   }
+
+  &__start {
+  }
+
+  &__end {
+  }
+
+  &__month, &__year {
+    float: left;
+    width: 50%;
+  }
+
+  &__month {
+  }
+
+  &__year {
+  }
+
+}

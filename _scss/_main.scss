@@ -23,8 +23,21 @@ body {
   clear: both;
 }
 
+a {
+  color: $md-accent-color;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 @import 'cv';
 @import 'list';
 @import 'column';
 @import 'section';
 @import 'image';
+@import 'work';
+@import 'duration';
+@import 'address';
+@import 'technical_skills';
