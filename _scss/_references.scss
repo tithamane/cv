@@ -1,0 +1,15 @@
+.reference {
+  padding: 1rem;
+
+  &--top-border {
+    border: {
+      color: $md-primary-color transparent transparent transparent;
+      style: dashed;
+      width: 1px;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+  }
+}

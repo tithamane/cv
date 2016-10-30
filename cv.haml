@@ -60,11 +60,14 @@ title: CV of The Thabang Thamane
       About
     .column__underline
     .section.section--flat.interests
+      .section__title
+        Interests
       .section__content
         {% for interest in site.data.interests %}
         .interests__interest
           {{ interest }}
         {% endfor %}
+        .clear-fix
 
     .section.personal
       .section__title
@@ -87,8 +90,8 @@ title: CV of The Thabang Thamane
             Address
           .cv__subtitle_value
             .address
-              .address__street
-                9 Richard Road
+              -# .address__street
+              -#   9 Richard Road
               .address__suburb
                 Fourways
               .address__city
@@ -372,16 +375,15 @@ title: CV of The Thabang Thamane
     .section.references
       .section__title
         References
-      .section__content
-        .reference
-          .reference__name
-            Chris Mallis
-          .reference__position
-            Senior Frontend Developer
+      .reference
+        .reference__name
+          Chris Mallis
+        .reference__position
+          Senior Frontend Developer
 
-        .reference
-          .reference__name
-            Nosi Ncala
-          .reference__position
-            Junior Developer
+      .reference.reference--top-border
+        .reference__name
+          Nosi Ncala
+        .reference__position
+          Junior Developer
   .clear-fix

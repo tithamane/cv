@@ -1,0 +1,11 @@
+.interests {
+  &__interest {
+     border: solid 1px $md-primary-color;
+     border-radius: 10px;
+     // background-color: $md-primary-color;
+     color: $md-primary-color; // $white-color;
+     float: left;
+     padding: .3rem .4rem;
+     margin: .11rem;
+  }
+}
