@@ -4,10 +4,10 @@ title: CV of The Thabang Thamane
 --- 
 .cv
   .column
-    .section.section--flat
+    .section.section--flat.section--no-shadow
       .section-content
         .cv__imageHolder
-          %img.cv__image.image.image--centered.image--round{src: "/images/Thabang-Thamane.JPG", alt: "Picture of Thabang Thamane"}
+          %img.cv__image.image.image--centered.image--round.image--shadow{src: "/images/Thabang-Thamane.JPG", alt: "Picture of Thabang Thamane"}
 
     .section.section--flat.handle
       .section__title
@@ -233,27 +233,28 @@ title: CV of The Thabang Thamane
     .section.technical_skills
       .section__title
         Technical Skill (Most Important)
-      %table.section__content.technical_skills__table
-        %th.technical_skills__header
-          Skill
-        %th.technical_skills__header
-          Level
-        %th.technical_skills__header{title: "Personal Technical Experience (How long I've been using this skill)"}
-          Personal Exp.
-        %th.technical_skills__header
-          Last Used
+      .section__content.section__content--no-margin
+        %table.technical_skills__table
+          %th.technical_skills__header
+            Skill
+          %th.technical_skills__header
+            Level
+          %th.technical_skills__header{title: "Personal Technical Experience (How long I've been using this skill)"}
+            Personal Exp.
+          %th.technical_skills__header
+            Last Used
 
-        {% for technical_skill in site.data.technical_skills %}
-        %tr.technical_skills__skill
-          %td.technical_skills__group
-            {{ technical_skill.group }}
-          %td.technical_skills__level
-            {{ technical_skill.level }}
-          %td.technical_skills__experience
-            {{ technical_skill.experience }}
-          %td.technical_skills__last_used
-            {{ technical_skill.last_used }}
-        {% endfor %}
+          {% for technical_skill in site.data.technical_skills %}
+          %tr.technical_skills__skill
+            %td.technical_skills__group
+              {{ technical_skill.group }}
+            %td.technical_skills__level
+              {{ technical_skill.level }}
+            %td.technical_skills__experience
+              {{ technical_skill.experience }}
+            %td.technical_skills__last_used
+              {{ technical_skill.last_used }}
+          {% endfor %}
 
   .column
     .column__title
@@ -375,15 +376,16 @@ title: CV of The Thabang Thamane
     .section.references
       .section__title
         References
-      .reference
-        .reference__name
-          Chris Mallis
-        .reference__position
-          Senior Frontend Developer
+      .section__content.section__content--no-margin
+        .reference
+          .reference__name
+            Chris Mallis
+          .reference__position
+            Senior Frontend Developer
 
-      .reference.reference--top-border
-        .reference__name
-          Nosi Ncala
-        .reference__position
-          Junior Developer
+        .reference.reference--top-border
+          .reference__name
+            Nosi Ncala
+          .reference__position
+            Junior Developer
   .clear-fix
