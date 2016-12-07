@@ -45,17 +45,17 @@ title: CV
 
         %p.summary__paragraph
           I keep testing new technologies because I would like to build systems that are:
-          %ul.summary__list
-            %li.summary__list_item
-              cost effective
-            %li.summary__list_item
-              easy to maintain
-            %li.summary__list_item
-              easy to pass on to other developers with little explanation
-            %li.summary__list_item
-              scalable if ever needed
-            %li.summary__list_item
-              efficient enought to boost user experience
+        %ul.summary__list
+          %li.summary__list_item
+            cost effective
+          %li.summary__list_item
+            easy to maintain
+          %li.summary__list_item
+            easy to pass on to other developers with little explanation
+          %li.summary__list_item
+            scalable if ever needed
+          %li.summary__list_item
+            efficient enought to boost user experience
 
         %p.summary__paragraph
           I would also like to see myself reach the highest levels a within the next five to ten years and would be happy to discuss the levels I have reached so far.
@@ -252,14 +252,15 @@ title: CV
         Technical Skill (Not Commercial Exp.)
       .section__content.section__content--no-margin
         %table.technical_skills__table
-          %th.technical_skills__header
-            Skill
-          %th.technical_skills__header
-            Level
-          %th.technical_skills__header{title: "Personal Technical Experience (How long I've been using this skill)"}
-            Technical Exp.
-          %th.technical_skills__header
-            Last Used
+          %tr.technical_skills__skill
+            %th.technical_skills__header
+              Skill
+            %th.technical_skills__header
+              Level
+            %th.technical_skills__header{title: "Personal Technical Experience (How long I've been using this skill)"}
+              Technical Exp.
+            %th.technical_skills__header
+              Last Used
 
           {% for technical_skill in site.data.technical_skills %}
           %tr.technical_skills__skill
