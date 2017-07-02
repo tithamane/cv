@@ -26,15 +26,19 @@ title: CV
         Looking For
       .section__content
         %p.summary__paragraph
-          Love Ruby and the "innovation" in the javascript world. I would love to do Ruby, Java or C#. So far I've
-          used Java for university assignments and C# with Unity but neither for web development. I've done a lot of thinking
-          and Java/C# seem to be a better investment. I'd choose Java over C# because I mostly likely will keep working in a 
-          unix environment .I've learned more with 2 years and 6 months of Rails then I did with 4 years of PHP. I would 
-          like to do Java and C# since they seem more "stable" in that 2011 videos still work today.
-
+          Now open to part time freelancing jobs. Will use my after hours time for this as I am still planning what
+          kind of SAAS service I am going to build.
         %p.summary__paragraph
-          I want to be in an environment where testing is a big deal, code reviews are done and a lot of software engineering
-          stuff. I enjoy learning and I'm still trying to get myself into the habit of automated testing.
+          I <strong>NOT</strong> looking for work at a digital agency as I have realised its a waste both in terms of 
+          pay and the amount of stuff you can learn as a developer. I want to be where software/web
+          applications are core to the business. Specifically web/cloud applications and big data has
+          sparked my interests as something to look into using the google cloud platform.
+        %p.summary__paragraph
+          My future company should either be using Vuejs or React for the frontend. I have started to put more focus
+          on javascript for almost everything. I no longer just want to be the programmer who does 80% new work and
+          20% maintaince. 20% need to now be corporate things as I don't intend to work forever nor be the average
+          developer. I am not a web designer who builds website with a contact us form(I can do that). My interests 
+          are building web applications that have dashboards in them.
 
     .section.summary
       .section__title Personal Pet Project
@@ -284,116 +288,51 @@ title: CV
       .section__title
         Work Experience
       .section__content.section__content--no-margin
-        .work
-          .work__place
-            .work__name
-              Gloo@Ogilvy
-            .duration
-              .duration__start
-                .duration__month
-                  March
-                .duration__year
-                  2016
-                .clear-fix
-              .duration__to
-                &#x2192;
-              .duration__end
-                .duration__month
-                  June
-                .duration__year
-                  2016
-                .clear-fix
-              .clear-fix
-            .work__address
-              .address
-                .address__physical
-                  15 Sloane Street
-                .address__suburb
-                  Bryanston
-                .address__city
-                  Johanneburg
-          .work__description
-            .work__role
-              Freelance Junior Developer
-            .work__duties
-              %ul
-                %li
-                  Design changes to WordPress sites
-                %li
-                  Using some of google's APIs like analytics and maps in sites
-                %li
-                  Basics QA testing
-                %li
-                  Working on responsive designs
-                %li
-                  Deploying a lot of stuff I worked on
-                %li
-                  Using Git as version control
-                %li
-                  Doing my timesheets
-          .work__opinion
-            I feel I was under-utilized and didn't get the chance I would have liked. In short I am glad to have moved on and looking back
-            I doubt I would have learned much in the long run if I had continued to do the most basic things.
-
+      {% for work in site.data.work_experience %}
         .work.work--top-border
           .work__place
             .work__name
-              WinWin Consulting International
+              {{ work.name }}
             .duration
               .duration__start
                 .duration__month
-                  July
+                  {{ work.duration.from.month }}
                 .duration__year
-                  2016
+                  {{ work.duration.from.year }}
                 .clear-fix
               .duration__to
                 &#x2192;
               .duration__end
-                .duration__present
-                  Present
+                .duration__month
+                  {{ work.duration.to.month }}
+                .duration__year
+                  {{ work.duration.to.year }}
                 .clear-fix
               .clear-fix
-            .work__address
-              .address
-                .address__complex
-                  1<sup>st</sup> Floor, North Building
-                .address__physical
-                  63 Saint James Crescent
-                .address__suburb
-                  Bryanston
-                .address__city
-                  Johanneburg
+            -# .work__address
+            -#   .address
+            -#     .address__physical
+            -#       15 Sloane Street
+            -#     .address__suburb
+            -#       Bryanston
+            -#     .address__city
+            -#       Johanneburg
           .work__description
             .work__role
-              Junior Developer
+              {{ work.title }}
             .work__duties
               %ul
+              {% for task in work.tasks %}
                 %li
-                  Main guy writing the backend REST APIs using Ruby(Rails) and NodeJS(Express and Socket.io) and PHP(Slim)
-                %li
-                  Writing code for background jobs used for long tasks like importing files that need to be processed first
-                %li
-                  Writing scripts that help speed up task that would take too much time when done manually
-                %li
-                  Writing a lot of frontend using angularjs (version 1 with Yeoman Angular Generator)
-                %li
-                  Take designs and convert them to html and custom build app specific admin dashboad
-          -# .work__opinion
-          -#   They trusted me and I showed them what I can do. As far as things go, I feel I shattered their gantt charts and increased productivity.
-          -#   Being here allowed me to see that I am called a "junior" yet I am doing this that even intermediates struggle to get done. I got a chance to 
-          -#   compare myself with other developers from different companies and I realised that I am way ahead of what my title makes me.
+                  {{ task }}
+              {% endfor %}
           .work__opinion
-            It is still a work in progress but I have been trusted enough to write code for things that are out of the scope of a junior.
-            I make this assumption based on junior developer tests I've seen which basically test if the person knows the difference 
-            between a server and the client. I've always known I can build an entire system on my own but I just had to do it in the industry
-            which I did.
+            {{ work.opinion }}
+      {% endfor %}
 
-    -# .CV__Section.CV__Personal_Projects
-    -#   .CV__Section_Title
-    -#     Personal Projects
     .section.references
       .section__title
-        References
+        References (Numbers upon request)
       .section__content.section__content--no-margin
         .reference
           .reference__name

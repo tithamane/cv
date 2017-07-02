@@ -1,0 +1,45 @@
+- name: Gloo@Ogilvy
+  title: Junior Freelance Developer
+  website: http://ogilvy.co.za
+  duration:
+    from:
+      month: March
+      year: 2016
+    to:
+      month: June
+      year: 2016
+  opinion: Felt more like an internship
+  tasks:
+    - Basic QA
+    - Changes to Wordpress site
+    - Using Google maps API
+- name: WinWin Consulting International
+  title: Junior Developer
+  website: http://www.winwinza.com
+  duration:
+    from:
+      month: July
+      year: 2016
+    to:
+      month: February
+      year: 2017
+  opinion: Nice place to work, was trusted enough to complete the tasks I was given.
+  tasks:
+    - Main guy writing backend REST APIs using Ruby, Node and PHP(slim)
+    - Writing background jobs using Ruby (using Sidekiq)
+    - Automating manual tasks that can be completed faster with scripts (Eg. Pre-processing stuff)
+    - Using Angular 1 with Yeoman Generator
+- name: DotModus
+  title: Front End Developer
+  website: http://dotmodus.com
+  duration:
+    from:
+      month: March
+      year: 2017
+    to:
+      month: Present
+      year: ''
+  opinion: First company where the main focus is making software.
+  tasks:
+    - Writing front end code using Vue 2
+    - Consuming the REST API available built with DRF (Django Rest Framework)
